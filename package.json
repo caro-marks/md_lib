@@ -1,0 +1,25 @@
+{
+  "name": "lib-markdown",
+  "version": "1.0.0",
+  "description": "lib to validade links in markdown files",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest ./test",
+    "cli": "node cli.mjs ./arquivos/texto1.md",
+    "validar" : "node cli.mjs ./arquivos/texto1.md validar"
+  },
+  "author": "marcos",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "node-fetch": "^3.2.7"
+  },
+  "devDependencies": {
+    "jest": "^28.1.2"
+  },
+  "jest": {
+    "moduleFileExtensions": ["mjs", "js"],
+    "testMatch": ["**/?(*.)test.?js"],
+    "testPathIgnorePatterns": ["node_modules"]
+  }
+}
